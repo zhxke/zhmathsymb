@@ -1,0 +1,63 @@
+%\usepackage{amsmath}
+%\usepackage{tikz}
+
+\newcommand*\zhparallel{%               %中文平行 parallel
+	\mathrel{\text{\tikz[baseline,line cap=round] \draw (0em,-0.3ex) -- (.4em,1.7ex) (.2em,-0.3ex) -- (.6em,1.7ex);}%
+}}
+
+
+\newcommand*\zhsubsetneqq{%               %中文真子集 proper subset
+	\mathrel{\text{\tikz[baseline,line cap=round]
+		\draw (.6636em,1.57ex) -- (.192em,1.57ex) arc (90:270:0.4022ex) -- (.6636em,.7674ex) (0,.2558ex) -- (.6636em,.2558ex) (0,.5116ex) -- (.6636em,.5116ex) (.2323em,0ex) -- (.4313em,.7674ex);%
+}}%
+}
+
+\newcommand*\zhsubset{%                    %%中文子集 subset
+	\mathrel{\text{\tikz[baseline,line cap=round]
+		\draw (.6636em,1.57ex) -- (.20235em,1.57ex) arc (90:270:0.4797ex) -- (.6636em,.61ex) (0,.305ex) -- (.6636em,.305ex);%
+}}%
+}
+
+\newcommand*\zhsupsetneqq{%               %中文反向真子集 proper supset
+	\mathrel{\text{\tikz[baseline,line cap=round]
+		\draw (-.6636em,1.57ex) -- (-.192em,1.57ex) arc (90:-90:0.4022ex) -- (-.6636em,.7674ex) (0,.2558ex) -- (-.6636em,.2558ex) (0,.5116ex) -- (-.6636em,.5116ex) (-.4313em,0ex) -- (-.2323em,.7674ex);%
+	}}%
+}
+
+\newcommand*\zhsupset{%                    %%中文反向子集 supset
+	\mathrel{\text{\tikz[baseline,line cap=round]
+		\draw (-.6636em,1.57ex) -- (-.20235em,1.57ex) arc (90:-90:0.4797ex) -- (-.6636em,.61ex) (-.6636em,.305ex) -- (0,.305ex);%
+}}%
+}
+
+
+\newcommand*\paraleq{%               %平行且等于parallel and equation
+	\mathrel{\hspace{.03555em}\text{\tikz[baseline,line cap=round]
+			\draw (.1em,0ex) -- (.9em,0ex)
+			(.1em,.25ex) -- (.9em,.25ex)
+			(.375em,.3ex) -- (.675em,1.75ex)
+			(.525em,.3ex) -- (.825em,1.75ex);}\hspace{.03555em}%
+}}
+
+%\newcommand*\paraleq{%               %稍微调宽之后的 平行且等于parallel and equation 看起来不太好看
+%	\mathrel{\hspace{.03555em}\text{\tikz[baseline,line cap=round]
+%			\draw (.1em,0ex) -- (.9em,0ex)
+%			(.1em,.3ex) -- (.9em,.3ex)
+%			(.375em,.4ex) -- (.675em,1.8ex)
+%			(.55em,.4ex) -- (.85em,1.8ex);}\hspace{.03555em}}%
+%}
+
+\newcommand*\param{%            %平行四边形parallelogram  param
+  \mathord{\text{%
+    \tikz[baseline,line join=round]
+      \draw (0,.1ex) -- (.8em,.1ex) -- (1em,1.4ex) -- (.2em,1.4ex) -- cycle;}}}
+
+\newcommand*\zhsim{%                                       %相似 similar
+	\mathrel{\text{%
+			\tikz[baseline,line cap=round] \draw (-.25em,1.15ex) .. controls (-.55em,1.15ex) and (-.51em,.23ex) .. (-.275em,.23ex) .. controls (0,.23ex) and (0,1.15ex) .. (.275em,1.15ex) .. controls (.51em,1.15ex) and (.55em,.23ex) .. (.25em,.23ex);%
+}}}
+
+\newcommand*\zhcong{%                                       %全等 congruent
+	\mathrel{\text{%\small%
+			\tikz \draw[baseline,line cap=round] (-.2em,1.35ex) .. controls (-.46em,1.6ex) and (-.54em,.65ex) .. (-.25em,.65ex) .. controls (-.06em,.65ex) and (.06em,1.35ex) .. (.25em,1.35ex) .. controls (.54em,1.35ex) and (.46em,.4ex) .. (.2em,.65ex) (-.46em,.4ex) -- (.46em,.4ex) (-.46em,0ex) -- (.46em,0ex);%
+}}}
